@@ -35,3 +35,7 @@ npm-debug.log*
 # Temporary
 .tmp/
 .cache/
+
+# APK files (استخدم Releases بدلاً منها)
+*.apk
+*.aab
