@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">إمساكية رمضان 1448</string>
+    <string name="title_activity_main">إمساكية رمضان 1448</string>
+    <string name="package_name">com.muslim.ramadan2027</string>
+    <string name="custom_url_scheme">com.muslim.ramadan2027</string>
+</resources>

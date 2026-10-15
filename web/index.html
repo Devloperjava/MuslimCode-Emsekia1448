@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050d1a">
+  <meta name="description" content="إمساكية رمضان 1448هـ — القاهرة">
+  <title>إمساكية رمضان 1448</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+
+<script>
+  (function() {
+    var KEY = "splash_shown_this_session";
+    var isIndex = window.location.pathname.endsWith("/index.html") ||
+                  window.location.pathname.endsWith("/") ||
+                  window.location.pathname === "" ||
+                  window.location.pathname === "/index.html";
+
+    // إذا كنا في index والـ splash لم يظهر في هذه الجلسة
+    if (isIndex && !sessionStorage.getItem(KEY)) {
+      sessionStorage.setItem(KEY, "1");
+      window.location.replace("./splash.html");
+    }
+
+    // امسح العلامة عند العودة للمرة القادمة (عند إغلاق التطبيق)
+    window.addEventListener("beforeunload", function() {
+      // لا نحذف هنا — sessionStorage يُحذف تلقائياً عند إغلاق WebView
+    });
+  })();
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&family=Almarai:wght@400;700;800&family=Reem+Kufi:wght@400;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ SKY SCENE ============ -->
+  <section class="sky" id="sky">
+    <div class="stars-layer" id="starsLayer"></div>
+    <div class="glow-horizon"></div>
+
+    <div class="rain" id="rainLayer"></div>
+
+    <div class="tent-garland" id="tentGarland"></div>
+
+    <!-- Clouds passing over the moon -->
+    <div class="clouds">
+      <div class="cloud cloud-1"></div>
+
+    
+
+    <!-- Crescent moon (animated) -->
+    <div class="moon-wrap" id="moonWrap">
+      <div class="moon-body" id="moonBody">
+        <!-- SVG crescent drawn inline -->
+        <svg viewBox="0 0 100 100" width="110" height="110" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="crescentGrad" cx="35%" cy="35%" r="75%">
+              <stop offset="0%"  stop-color="#fffbe6"/>
+              <stop offset="55%" stop-color="#f5e2a0"/>
+              <stop offset="100%" stop-color="#c9a227"/>
+            </radialGradient>
+            <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="rgba(255,235,150,0.5)"/>
+              <stop offset="70%"  stop-color="rgba(255,235,150,0.1)"/>
+              <stop offset="100%" stop-color="rgba(255,235,150,0)"/>
+            </radialGradient>
+          </defs>
+          <!-- Outer halo -->
+          <circle cx="50" cy="50" r="48" fill="url(#haloGrad)"/>
+          <!-- Crescent: circle + mask circle -->
+          <g>
+            <circle cx="50" cy="50" r="30" fill="url(#crescentGrad)"/>
+            <circle cx="62" cy="46" r="26" fill="#050d1a"/>
+          </g>
+          <!-- Small sparkle -->
+          <circle cx="30" cy="36" r="1.5" fill="#fff8d6" opacity="0.9"/>
+          <circle cx="38" cy="68" r="1.2" fill="#fff8d6" opacity="0.7"/>
+        </svg>
+      </div>
+      </div>
+
+    <!-- Mosque with ONE minaret -->
+    <div class="mosque-silhouette">
+      <svg viewBox="0 0 850 320" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="mg1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3a5f8a"/>
+            <stop offset="100%" stop-color="#0f2a4a"/>
+          </linearGradient>
+          <linearGradient id="mg2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4a7099"/>
+            <stop offset="100%" stop-color="#152e52"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="290" width="1000" height="30" fill="url(#mg1)"/>
+        <g fill="url(#mg1)">
+          <rect x="300" y="180" width="400" height="110" rx="6"/>
+          <path d="M395,180 Q500,80 605,180 Z" fill="url(#mg2)"/>
+          <rect x="497" y="68" width="6" height="20"/>
+          <circle cx="500" cy="64" r="5"/>
+          <rect x="735" y="130" width="30" height="160"/>
+          <rect x="727" y="165" width="46" height="8" rx="3"/>
+          <path d="M735,130 Q750,105 765,130 Z" fill="url(#mg2)"/>
+          <rect x="748" y="96" width="4" height="14"/>
+          <circle cx="750" cy="92" r="3.5"/>
+          <path d="M280,180 Q310,145 340,180 Z"/>
+        </g>
+        <g fill="#ffd97a" opacity="0.95">
+          <rect x="330" y="220" width="16" height="45" rx="8"/>
+          <rect x="380" y="220" width="16" height="45" rx="8"/>
+          <rect x="430" y="220" width="16" height="45" rx="8"/>
+          <rect x="560" y="220" width="16" height="45" rx="8"/>
+          <rect x="610" y="220" width="16" height="45" rx="8"/>
+          <rect x="660" y="220" width="16" height="45" rx="8"/>
+          <rect x="478" y="240" width="44" height="50" rx="22"/>
+        </g>
+      </svg>
+    </div><!-- Swaying lantern below minaret -->
+    <div class="hanging-lantern" id="hangingLantern">
+      <div class="chain"></div>
+      <div class="lantern-body">
+        <div class="lantern-glow"></div>
+        <div class="lantern-top"></div>
+        <div class="lantern-glass"></div>
+        <div class="lantern-bottom"></div>
+      </div>
+    </div>
+
+    <!-- Title overlay -->
+    <div class="title-overlay">
+      <h1>إمساكية رمضان 1448</h1>
+    </div>
+  </section>
+
+  <!-- ============ APP ============ -->
+  <main class="app">
+
+    
+    <!-- RAMADAN COUNTER -->
+    <section class="ramadan-counter" id="ramadanCounter">
+      <div class="rc-label">متبقٍ على رمضان 1448</div>
+      <div class="rc-timer">
+        <div class="rc-part"><span class="rc-num" id="rcDays">—</span><span class="rc-unit">يوم</span></div>
+        <div class="rc-sep">:</div>
+        <div class="rc-part"><span class="rc-num" id="rcHours">—</span><span class="rc-unit">ساعة</span></div>
+        <div class="rc-sep">:</div>
+        <div class="rc-part"><span class="rc-num" id="rcMins">—</span><span class="rc-unit">دقيقة</span></div>
+        <div class="rc-sep">:</div>
+        <div class="rc-part"><span class="rc-num" id="rcSecs">—</span><span class="rc-unit">ثانية</span></div>
+      </div>
+    </section>
+
+    <div class="tooltip-container" id="tooltipContainer"></div>
+
+    <section id="countdown" class="countdown" aria-live="polite"></section>
+
+    <section id="today" class="today-card"></section>
+
+    <section class="calendar-section">
+      <div id="calendar" class="calendar"></div>
+    </section>
+
+    
+    <footer class="site-footer">
+      <div class="footer-line"></div>
+      <div class="brand">
+        <span class="brand-name">MuslimCode</span>
+      </div>
+      <div class="footer-glow"></div>
+    </footer>
+
+  </main>
+
+  <script src="./moon.js"></script>
+  <script src="./night-sky.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

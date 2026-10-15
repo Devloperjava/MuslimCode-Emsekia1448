@@ -1,0 +1,13 @@
+{
+  "appId": "com.muslim.ramadan2027",
+  "appName": "إمساكية رمضان 1448",
+  "webDir": "web",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}

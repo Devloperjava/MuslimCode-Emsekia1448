@@ -1,0 +1,36 @@
+{
+  "name": "ramadan-emsakiah-2027",
+  "version": "1.0.0",
+  "description": "تطبيق إمساكية رمضان 1448هـ / 2027م",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "web": "node server.js",
+    "dev": "node server.js",
+    "build": "node src/build-data.js",
+    "sync": "node src/sync-all.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ramadan",
+    "emsakiah",
+    "prayer-times",
+    "islamic"
+  ],
+  "author": "Muslim",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "adhan": "^4.4.6"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  }
+}
