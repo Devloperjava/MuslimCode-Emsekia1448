@@ -1,41 +1,6 @@
-# Dependencies
-node_modules/
-package-lock.json
-
-# Android build artifacts
-android/build/
-android/app/build/
-android/.gradle/
-android/local.properties
-android/capacitor-cordova-android-plugins/
-android/app/src/main/assets/public/
-
-# Keystore (مهم جداً — لا ترفعه)
-*.keystore
-*.jks
-key.properties
-
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-
-# Environment
-.env
-.env.local
-
-# Temporary
-.tmp/
-.cache/
-
-# APK files (استخدم Releases بدلاً منها)
-*.apk
-*.aab
+node_modules/ 
+build/ 
+.gradle/ 
+.idea/ 
+*.apk 
+*.keystore 
