@@ -4,3 +4,8 @@ build/
 .idea/ 
 *.apk 
 *.keystore 
+# Keystore — لا يُرفع أبداً
+android/key.properties
+key.properties
+*.keystore
+*.jks
