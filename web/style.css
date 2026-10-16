@@ -2877,3 +2877,461 @@ body, .app, .calendar-section{
     max-height:500px;
   }
 }
+
+
+/* ============================================================
+   LABEL-UPGRADE — بترولي دافئ + فضي + Typewriter
+   (لا يحذف أي تعريف سابق — يتغلّب بـ !important)
+   ============================================================ */
+
+/* ===== 1) الجملة — تدرج بترولي → فضي ===== */
+.rc-label{
+  font-family:"Reem Kufi","Aref Ruqaa","Amiri",Georgia,serif !important;
+  font-size:clamp(22px, 5.5vw, 28px) !important;
+  font-weight:900 !important;
+  letter-spacing:0.5px !important;
+  line-height:1.5 !important;
+  padding:10px 16px !important;
+  background:linear-gradient(
+    110deg,
+    #2a5f5a 0%,       /* بترولي دافئ */
+    #3d7a72 20%,      /* بترولي متوسط */
+    #c8d4cf 45%,      /* فضي */
+    #ffffff 50%,      /* أبيض ناصع */
+    #c8d4cf 55%,      /* فضي */
+    #3d7a72 80%,      /* بترولي متوسط */
+    #2a5f5a 100%      /* بترولي دافئ */
+  ) !important;
+  background-size:300% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:transparent !important;
+  text-align:center !important;
+  margin-bottom:18px !important;
+  display:block !important;
+  filter:drop-shadow(0 2px 10px rgba(42,95,90,.45)) !important;
+  animation:labelShine 6s ease-in-out infinite !important;
+}
+
+@keyframes labelShine{
+  0%,55%,100%{background-position:200% 0}
+  75%         {background-position:-50% 0}
+}
+
+/* ===== 2) Typewriter ===== */
+
+
+
+
+
+
+/* ===== استجابة للهاتف ===== */
+@media (max-width: 600px){
+  .rc-label{
+    font-size:20px !important;
+    padding:6px 10px !important;
+  }
+  
+}
+
+
+/* ============================================================
+   TYPEWRITER-JS — JS يتحكم في النص
+   ============================================================ */
+
+/* ===== الجملة — أكبر + بترولي/فضي ===== */
+.rc-label{
+  font-family:"Reem Kufi","Aref Ruqaa","Amiri",Georgia,serif !important;
+  font-size:clamp(30px, 7vw, 38px) !important;
+  font-weight:900 !important;
+  letter-spacing:0.5px !important;
+  line-height:1.6 !important;
+  padding:14px 20px !important;
+  min-height:60px !important;
+  text-align:center !important;
+  margin-bottom:20px !important;
+  display:block !important;
+}
+
+/* ===== Span — تدرج + مؤشر ===== */
+.rc-typewriter{
+  display:inline-block !important;
+  background:linear-gradient(
+    110deg,
+    #2a5f5a 0%,
+    #3d7a72 20%,
+    #c8d4cf 45%,
+    #ffffff 50%,
+    #c8d4cf 55%,
+    #3d7a72 80%,
+    #2a5f5a 100%
+  ) !important;
+  background-size:300% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:transparent !important;
+  filter:drop-shadow(0 2px 10px rgba(42,95,90,.5)) !important;
+  animation:labelShine 6s ease-in-out infinite !important;
+  will-change:contents !important;
+  vertical-align:bottom !important;
+}
+
+@keyframes labelShine{
+  0%,55%,100%{background-position:200% 0}
+  75%         {background-position:-50% 0}
+}
+
+/* ===== المؤشر الوامض ===== */
+.rc-cursor{
+  display:inline-block !important;
+  width:3px !important;
+  height:1em !important;
+  background:#c8d4cf !important;
+  margin-right:4px !important;
+  vertical-align:middle !important;
+  animation:cursorBlink 0.8s step-end infinite !important;
+  box-shadow:0 0 8px rgba(200,212,207,.8) !important;
+}
+
+@keyframes cursorBlink{
+  0%,100%{opacity:1}
+  50%    {opacity:0}
+}
+
+/* ===== استجابة للهاتف ===== */
+@media (max-width: 600px){
+  .rc-label{
+    font-size:clamp(26px, 6vw, 32px) !important;
+    padding:10px 14px !important;
+    min-height:50px !important;
+  }
+  .rc-cursor{
+    width:2.5px !important;
+  }
+}
+
+
+/* ============================================================
+   POLISH-LABEL — تباين قوي + خط أكبر +3px
+   ============================================================ */
+
+.rc-label{
+  font-family:"Reem Kufi","Aref Ruqaa","Amiri",Georgia,serif !important;
+  font-size:clamp(33px, 7.5vw, 41px) !important;  /* ← +3px */
+  font-weight:900 !important;
+  letter-spacing:0.5px !important;
+  line-height:1.6 !important;
+  padding:14px 20px !important;
+  min-height:64px !important;
+  text-align:center !important;
+  margin-bottom:20px !important;
+  display:block !important;
+}
+
+.rc-typewriter{
+  display:inline-block !important;
+  background:linear-gradient(
+    110deg,
+    #4a9a92 0%,       /* بترولي فاتح جداً — تباين عالي */
+    #7ec9c0 20%,      /* فاتح */
+    #e8f0ee 45%,      /* فضي فاتح */
+    #ffffff 50%,      /* أبيض ناصع */
+    #e8f0ee 55%,      /* فضي فاتح */
+    #7ec9c0 80%,      /* فاتح */
+    #4a9a92 100%      /* بترولي فاتح */
+  ) !important;
+  background-size:300% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:transparent !important;
+  filter:
+    drop-shadow(0 0 15px rgba(126,201,192,.7))    /* توهج بترولي فاتح */
+    drop-shadow(0 0 30px rgba(126,201,192,.4))
+    drop-shadow(0 3px 12px rgba(0,0,0,.5)) !important;
+  animation:labelShine 5s ease-in-out infinite !important;
+  will-change:contents !important;
+  vertical-align:bottom !important;
+}
+
+@keyframes labelShine{
+  0%,55%,100%{background-position:200% 0}
+  75%         {background-position:-50% 0}
+}
+
+.rc-cursor{
+  display:inline-block !important;
+  width:4px !important;
+  height:1em !important;
+  background:#7ec9c0 !important;
+  margin-right:4px !important;
+  vertical-align:middle !important;
+  animation:cursorBlink 0.8s step-end infinite !important;
+  box-shadow:
+    0 0 10px rgba(126,201,192,1),
+    0 0 20px rgba(126,201,192,.6) !important;
+  border-radius:1px !important;
+}
+
+@keyframes cursorBlink{
+  0%,100%{opacity:1;transform:scaleY(1)}
+  50%    {opacity:0.3;transform:scaleY(0.85)}
+}
+
+@media (max-width: 600px){
+  .rc-label{
+    font-size:clamp(29px, 7vw, 35px) !important;
+    padding:10px 14px !important;
+    min-height:56px !important;
+  }
+  .rc-cursor{
+    width:3.5px !important;
+  }
+}
+
+
+/* ============================================================
+   MOON-STARS — نجوم حول الهلال + حركة أسرع
+   ============================================================ */
+
+/* ===== 1) نجوم حول الهلال — في كل بطاقة ===== */
+.date-moon{
+  position:relative !important;
+}
+
+/* نجمة 1 — أعلى يمين */
+.date-moon::before{
+  content:"" !important;
+  position:absolute !important;
+  top:8% !important;
+  right:12% !important;
+  width:3px !important;
+  height:3px !important;
+  border-radius:50% !important;
+  background:#ffffff !important;
+  box-shadow:
+    0 0 4px rgba(255,255,255,1),
+    0 0 8px rgba(255,255,255,.7) !important;
+  animation:moonStarA 3s ease-in-out infinite !important;
+  pointer-events:none !important;
+}
+
+/* نجمة 2 — أسفل يسار */
+.date-moon::after{
+  content:"" !important;
+  position:absolute !important;
+  bottom:15% !important;
+  left:18% !important;
+  width:2.5px !important;
+  height:2.5px !important;
+  border-radius:50% !important;
+  background:#ffffff !important;
+  box-shadow:
+    0 0 4px rgba(255,255,255,.9),
+    0 0 8px rgba(255,255,255,.6) !important;
+  animation:moonStarB 3.5s ease-in-out 1s infinite !important;
+  pointer-events:none !important;
+}
+
+/* وميض النجمة الأولى */
+@keyframes moonStarA{
+  0%,100%{
+    opacity:.15;
+    transform:scale(.7);
+    box-shadow:0 0 3px rgba(255,255,255,.4);
+  }
+  40%{
+    opacity:1;
+    transform:scale(1.6);
+    box-shadow:
+      0 0 6px rgba(255,255,255,1),
+      0 0 14px rgba(255,255,255,.9),
+      0 0 22px rgba(255,255,255,.5);
+  }
+}
+
+/* وميض النجمة الثانية */
+@keyframes moonStarB{
+  0%,100%{
+    opacity:.15;
+    transform:scale(.7);
+    box-shadow:0 0 3px rgba(255,255,255,.4);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.5);
+    box-shadow:
+      0 0 5px rgba(255,255,255,1),
+      0 0 12px rgba(255,255,255,.8),
+      0 0 18px rgba(255,255,255,.5);
+  }
+}
+
+/* في البطاقة الحالية — نجوم بلون مختلف */
+.day-card.is-today .date-moon::before,
+.day-card.is-today .date-moon::after{
+  background:#4a9a92 !important;
+  box-shadow:
+    0 0 5px rgba(74,154,146,1),
+    0 0 10px rgba(74,154,146,.7) !important;
+}
+
+/* ===== 2) حركة الهلال — أسرع + أوضح ===== */
+.moon-emoji{
+  animation:moonFaster 2.5s cubic-bezier(.45,0,.55,1) infinite !important;
+  display:inline-block !important;
+  will-change:transform !important;
+}
+
+@keyframes moonFaster{
+  0%,100%{
+    transform:translateY(0) rotate(-2deg) scale(1);
+  }
+  50%{
+    transform:translateY(-8px) rotate(2deg) scale(1.08);
+  }
+}
+
+/* ===== استجابة للهاتف ===== */
+@media (max-width: 600px){
+  .date-moon::before{
+    width:2.5px !important;
+    height:2.5px !important;
+  }
+  .date-moon::after{
+    width:2px !important;
+    height:2px !important;
+  }
+  .moon-emoji{
+    animation-duration:2.8s !important;
+  }
+}
+
+
+/* ============================================================
+   STARS-SAFE — نجوم الهلال + نجوم خلف البطاقات
+   ============================================================ */
+
+/* ===== 1) نجوم الهلال — فضي + ذهبي ===== */
+
+/* نجمة 1 (فضي) — أعلى يمين */
+.date-moon::before{
+  content:"" !important;
+  position:absolute !important;
+  top:8% !important;
+  right:12% !important;
+  width:3.5px !important;
+  height:3.5px !important;
+  border-radius:50% !important;
+  background:#e8f0ee !important;  /* فضي */
+  box-shadow:
+    0 0 5px rgba(232,240,238,1),
+    0 0 10px rgba(232,240,238,.8),
+    0 0 18px rgba(232,240,238,.5) !important;
+  animation:moonStarSilver 3s ease-in-out infinite !important;
+  pointer-events:none !important;
+  z-index:2 !important;
+}
+
+@keyframes moonStarSilver{
+  0%,100%{
+    opacity:.2;
+    transform:scale(.7);
+    box-shadow:0 0 3px rgba(232,240,238,.4);
+  }
+  40%{
+    opacity:1;
+    transform:scale(1.7);
+    box-shadow:
+      0 0 7px rgba(232,240,238,1),
+      0 0 15px rgba(232,240,238,.95),
+      0 0 25px rgba(232,240,238,.6);
+  }
+}
+
+/* نجمة 2 (ذهبي) — أسفل يسار */
+.date-moon::after{
+  content:"" !important;
+  position:absolute !important;
+  bottom:15% !important;
+  left:18% !important;
+  width:3px !important;
+  height:3px !important;
+  border-radius:50% !important;
+  background:#f5d76e !important;  /* ذهبي */
+  box-shadow:
+    0 0 5px rgba(245,215,110,1),
+    0 0 10px rgba(245,215,110,.8),
+    0 0 18px rgba(245,215,110,.5) !important;
+  animation:moonStarGold 3.5s ease-in-out 1s infinite !important;
+  pointer-events:none !important;
+  z-index:2 !important;
+}
+
+@keyframes moonStarGold{
+  0%,100%{
+    opacity:.2;
+    transform:scale(.7);
+    box-shadow:0 0 3px rgba(245,215,110,.4);
+  }
+  50%{
+    opacity:1;
+    transform:scale(1.6);
+    box-shadow:
+      0 0 6px rgba(245,215,110,1),
+      0 0 14px rgba(245,215,110,.9),
+      0 0 22px rgba(245,215,110,.6);
+  }
+}
+
+/* ===== 2) نجوم خلف كل بطاقة — بلون بترولي فاتح ===== */
+
+.day-card{
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(74,154,146,.35) 1.5px, transparent 2px),
+    radial-gradient(circle at 85% 15%, rgba(74,154,146,.3) 2px, transparent 2.5px),
+    radial-gradient(circle at 25% 80%, rgba(74,154,146,.3) 1.5px, transparent 2px),
+    radial-gradient(circle at 75% 70%, rgba(74,154,146,.35) 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 50%, rgba(74,154,146,.2) 1px, transparent 1.5px),
+    radial-gradient(circle at 10% 60%, rgba(74,154,146,.25) 1.5px, transparent 2px),
+    radial-gradient(circle at 90% 85%, rgba(74,154,146,.3) 1.5px, transparent 2px) !important;
+  background-size:100% 100% !important;
+  background-repeat:no-repeat !important;
+  background-color:#ffffff !important;  /* ✅ أبقِ الخلفية البيضاء */
+  animation:cardStarsTwinkle 5s ease-in-out infinite !important;
+}
+
+@keyframes cardStarsTwinkle{
+  0%,100%{
+    background-position:0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    filter:brightness(1);
+  }
+  50%{
+    background-position:2px -2px, -2px 2px, 1px 1px, -1px -1px, 0 0, 1px 0, -1px 1px;
+    filter:brightness(1.08);
+  }
+}
+
+/* البطاقة الحالية — نجوم ذهبية */
+.day-card.is-today{
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(201,162,39,.4) 1.5px, transparent 2px),
+    radial-gradient(circle at 85% 15%, rgba(201,162,39,.35) 2px, transparent 2.5px),
+    radial-gradient(circle at 25% 80%, rgba(201,162,39,.35) 1.5px, transparent 2px),
+    radial-gradient(circle at 75% 70%, rgba(201,162,39,.4) 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 50%, rgba(201,162,39,.25) 1px, transparent 1.5px) !important;
+}
+
+/* ===== استجابة ===== */
+@media (max-width: 600px){
+  .date-moon::before{
+    width:3px !important;
+    height:3px !important;
+  }
+  .date-moon::after{
+    width:2.5px !important;
+    height:2.5px !important;
+  }
+}

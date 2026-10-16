@@ -479,3 +479,57 @@ function moonCardSVG(day) {
     start();
   }
 })();
+
+
+/* TYPEWRITER-JS */
+(function typewriterJS(){
+  function start(){
+    var el = document.querySelector(".rc-typewriter");
+    if (!el) {
+      setTimeout(start, 500);
+      return;
+    }
+
+    var text = "متبقي على رمضان 1448";
+    var i = 0;
+    var direction = 1; // 1 = typing, -1 = deleting
+    var pauseCounter = 0;
+    var PAUSE_TICKS = 20; // 20 × 100ms = 2 seconds pause
+    var TYPING_SPEED = 100; // ms per char
+
+    function tick(){
+      if (pauseCounter > 0) {
+        pauseCounter--;
+        return;
+      }
+
+      if (direction === 1) {
+        // typing
+        i++;
+        el.textContent = text.substring(0, i);
+        if (i >= text.length) {
+          direction = -1;
+          pauseCounter = PAUSE_TICKS;
+        }
+      } else {
+        // deleting
+        i--;
+        el.textContent = text.substring(0, i);
+        if (i <= 0) {
+          direction = 1;
+          pauseCounter = PAUSE_TICKS / 2;
+        }
+      }
+    }
+
+    setInterval(tick, TYPING_SPEED);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function(){
+      setTimeout(start, 800);
+    });
+  } else {
+    setTimeout(start, 800);
+  }
+})();
