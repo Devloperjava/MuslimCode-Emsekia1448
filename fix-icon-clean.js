@@ -1,0 +1,75 @@
+const fs = require("fs");
+const path = require("path");
+
+const RES = path.join(__dirname, "resources");
+
+console.log("🖼️ إعادة تصميم الأيقونة — فانوس أنيق 1.3×\n");
+
+const iconSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#1f4f5a"/>
+      <stop offset="45%" stop-color="#0f2a3a"/>
+      <stop offset="100%" stop-color="#05141c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,220,120,.6)"/>
+      <stop offset="70%" stop-color="rgba(255,220,120,.1)"/>
+      <stop offset="100%" stop-color="rgba(255,220,120,0)"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4c8"/>
+      <stop offset="50%" stop-color="#f5d76e"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- الخلفية -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- توهج -->
+  <circle cx="512" cy="512" r="400" fill="url(#glow)"/>
+
+  <!-- الفانوس — حجم 1.3× في المنتصف -->
+  <g transform="translate(512, 512) scale(1.3) translate(-512, -512)">
+    <!-- السلك -->
+    <line x1="512" y1="180" x2="512" y2="270" stroke="#c9a227" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- القبة العلوية -->
+    <path d="M 400 320 Q 512 250 624 320 Z" fill="url(#gold)"/>
+    <rect x="420" y="315" width="184" height="20" rx="10" fill="#c9a227"/>
+    
+    <!-- جسم الفانوس -->
+    <rect x="400" y="335" width="224" height="350" rx="30" fill="url(#gold)"/>
+    <rect x="400" y="335" width="224" height="350" rx="30" fill="none" stroke="#8b6914" stroke-width="6"/>
+    
+    <!-- النافذة الشفافة (توهج داخلي) -->
+    <rect x="430" y="365" width="164" height="290" rx="20" fill="rgba(255,255,255,.4)"/>
+    
+    <!-- زخارف النافذة -->
+    <line x1="472" y1="365" x2="472" y2="655" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+    <line x1="512" y1="365" x2="512" y2="655" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+    <line x1="552" y1="365" x2="552" y2="655" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+    
+    <line x1="430" y1="430" x2="594" y2="430" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+    <line x1="430" y1="510" x2="594" y2="510" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+    <line x1="430" y1="590" x2="594" y2="590" stroke="#8b6914" stroke-width="4" opacity="0.6"/>
+
+    <!-- القاعدة السفلية -->
+    <path d="M 400 685 Q 512 730 624 685 Z" fill="#c9a227"/>
+    <rect x="440" y="700" width="144" height="20" rx="10" fill="#8b6914"/>
+    <circle cx="512" cy="740" r="15" fill="#f5d76e"/>
+  </g>
+</svg>`;
+
+fs.writeFileSync(path.join(RES, "icon.svg"), iconSVG, "utf8");
+console.log("✓ resources/icon.svg: فانوس أنيق 1.3× — يملأ 60% من الأيقونة");
+
+console.log("\\n📋 التالي:");
+console.log("  svgexport resources\\\\icon.svg resources\\\\icon.png 1024:1024");
+console.log("  npx @capacitor/assets generate --android");
+console.log("  npx cap sync");
+console.log("  cd android");
+console.log("  gradlew.bat assembleRelease");
+console.log("  adb uninstall com.muslim.ramadan2027");
+console.log("  adb install -r app\\\\build\\\\outputs\\\\apk\\\\release\\\\app-release.apk");
