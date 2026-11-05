@@ -9,16 +9,6 @@
 - 📅 **تقويم كامل**: يعرض مواقيت الصلاة (الفجر، الظهر، العصر، المغرب، العشاء) لكل يوم.
 - 🌙 **واجهة مستخدم حديثة**: تصميم متجاوب (Responsive) يعمل على جميع الهواتف.
 
-## 📱 لقطات الشاشة (Screenshots)
-
-<p align="center">
-  <img src="./screenshots/Home.png" width="220" alt="الشاشة الرئيسية" style="margin: 5px; border-radius: 8px;">
-  <img src="./screenshots/calendar 1.png" width="220" alt="التقويم 1" style="margin: 5px; border-radius: 8px;">
-  <img src="./screenshots/calendar 2.png" width="220" alt="التقويم 2" style="margin: 5px; border-radius: 8px;">
-  <img src="./screenshots/calendar Last.png" width="220" alt="آخر يوم" style="margin: 5px; border-radius: 8px;">
-  <img src="./screenshots/counter.png" width="220" alt="العداد التنازلي" style="margin: 5px; border-radius: 8px;">
-</p>
-
 ## ⚙️ التقنيات المستخدمة (Tech Stack)
 - HTML5, CSS3, JavaScript (Vanilla)
 - Capacitor (لتحويل التطبيق إلى Android)
