@@ -11,13 +11,18 @@
 
 ## 📱 لقطات الشاشة (Screenshots)
 
-<p align="center">
-  <img src="./screenshots/Home.png" width="250" alt="الشاشة الرئيسية">
-  <img src="./screenshots/calendar 1.png" width="250" alt="التقويم 1">
-  <img src="./screenshots/calendar 2.png" width="250" alt="التقويم 2">
-  <img src="./screenshots/calendar Last.png" width="250" alt="آخر يوم">
-  <img src="./screenshots/counter.png" width="250" alt="العداد التنازلي">
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="./screenshots/Home.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="الشاشة الرئيسية"></td>
+    <td align="center"><img src="./screenshots/calendar 1.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="التقويم 1"></td>
+    <td align="center"><img src="./screenshots/calendar 2.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="التقويم 2"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./screenshots/calendar Last.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="آخر يوم"></td>
+    <td align="center"><img src="./screenshots/counter.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="العداد التنازلي"></td>
+    <td align="center"></td>
+  </tr>
+</table>
 
 ## ⚙️ التقنيات المستخدمة (Tech Stack)
 - HTML5, CSS3, JavaScript (Vanilla)
