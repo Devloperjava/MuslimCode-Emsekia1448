@@ -22,13 +22,21 @@
 - Capacitor (لتحويل التطبيق إلى Android)
 - GitHub Actions (اختياري للـ CI/CD)
 
-## 🔗 رابط التحميل المختصر
-[https://is.gd/YtLoQl](https://is.gd/YtLoQl)
+## 🔗 التحميل السريع (Quick Download)
 
-## 📱 مسح رمز QR للتحميل
-<p align="center">
-  <img src="./qrcode.png" width="200" alt="QR Code">
-</p>
+<table align="center">
+  <tr>
+    <td align="center" style="padding: 20px; background: #f6f8fa; border-radius: 10px;">
+      <p style="font-size: 18px; font-weight: bold;">📱 مسح رمز QR للتحميل مباشرة</p>
+      <a href="https://is.gd/YtLoQl">
+        <img src="./qrcode.png" width="180" alt="QR Code">
+      </a>
+      <br>
+      <p>أو اضغط على الرابط:</p>
+      <a href="https://is.gd/YtLoQl" style="font-size: 16px; color: #0366d6;">https://is.gd/YtLoQl</a>
+    </td>
+  </tr>
+</table>
 
 ## 👨‍💻 المطور (Developer)
 - **MuslimCode** - [GitHub](https://github.com/Devloperjava)
