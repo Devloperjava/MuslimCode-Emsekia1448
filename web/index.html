@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#050d1a">
   <meta name="description" content="إمساكية رمضان 1448هـ — القاهرة">
   <title>إمساكية رمضان 1448</title>
-  
+
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
 
 
 <script>
@@ -44,13 +44,14 @@
 
     <div class="rain" id="rainLayer"></div>
 
-    <div class="tent-garland" id="tentGarland"></div>
+
 
     <!-- Clouds passing over the moon -->
     <div class="clouds">
-      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-1"></div><div class="cloud cloud-2"></div><div class="cloud cloud-3"></div>
+    </div>
 
-    
+
 
     <!-- Crescent moon (animated) -->
     <div class="moon-wrap" id="moonWrap">
@@ -81,7 +82,7 @@
           <circle cx="38" cy="68" r="1.2" fill="#fff8d6" opacity="0.7"/>
         </svg>
       </div>
-      </div>
+      </div><div class="andalusian-pendant" aria-hidden="true"><div class="ap-chain"></div><div class="ap-glow"></div><svg viewBox="0 0 48 66"><path class="ap-metal" d="M24 2L29 7 36 7 41 14 41 21 46 27 41 34 41 42 36 49 29 49 24 55 19 49 12 49 7 42 7 34 2 27 7 21 7 14 12 7 19 7Z"/><path class="ap-glass" d="M24 9L32 13 36 22 36 36 32 45 24 50 16 45 12 36 12 22 16 13Z"/><path class="ap-ornament" d="M24 10V49M13 27H35M16 15L32 43M32 15L16 43M12 22L24 17 36 22M12 36L24 42 36 36"/><circle class="ap-copper" cx="24" cy="5" r="1.5"/><circle class="ap-copper" cx="24" cy="55" r="1.5"/></svg></div>
 
     <!-- Mosque with ONE minaret -->
     <div class="mosque-silhouette">
@@ -119,16 +120,6 @@
           <rect x="478" y="240" width="44" height="50" rx="22"/>
         </g>
       </svg>
-    </div><!-- Swaying lantern below minaret -->
-    <div class="hanging-lantern" id="hangingLantern">
-      <div class="chain"></div>
-      <div class="lantern-body">
-        <div class="lantern-glow"></div>
-        <div class="lantern-top"></div>
-        <div class="lantern-glass"></div>
-        <div class="lantern-bottom"></div>
-      </div>
-    </div>
 
     <!-- Title overlay -->
     <div class="title-overlay">
@@ -139,7 +130,7 @@
   <!-- ============ APP ============ -->
   <main class="app">
 
-    
+
     <!-- RAMADAN COUNTER -->
     <section class="ramadan-counter" id="ramadanCounter">
       <div class="rc-label"><span class="rc-typewriter">متبقٍ على رمضان 1448</span><span class="rc-cursor"></span></div>
@@ -164,10 +155,10 @@
       <div id="calendar" class="calendar"></div>
     </section>
 
-    
+
     <footer class="site-footer">
       <div class="footer-line"></div>
-      
+
       <!-- AYAH-CLEAN -->
       <div class="ayah-clean">
         <span class="ayah-clean-open">﴿</span>
@@ -176,7 +167,7 @@
       </div>
       <!-- /AYAH-CLEAN -->
 
-      
+
       <div class="brand">
         <span class="brand-name">MuslimCode</span>
       </div>
@@ -187,6 +178,8 @@
 
   <script src="./moon.js"></script>
   <script src="./night-sky.js"></script>
+  <script src="./v99-visual-upgrade.js"></script>
+  <script src="./v99-candle-rain.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

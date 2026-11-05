@@ -16,10 +16,10 @@ const {
 } = require("adhan");
 
 const LOCATION = {
-  name: "القاهرة",
+  name: "الإسكندرية",
   country: "مصر",
-  latitude: 31.2001,
-  longitude: 29.9187,
+  latitude: 31.20176,
+  longitude: 29.91582,
   timezone: "Africa/Cairo"
 };
 

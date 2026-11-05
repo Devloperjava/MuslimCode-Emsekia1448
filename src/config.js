@@ -2,11 +2,11 @@
 
 module.exports = {
   location: {
-    name: النوبارية الجديدة",
+    name: "الإسكندرية",
     country: "Egypt",
-    governorate: "Beheira",
-    latitude: 30.6667,
-    longitude: 30.0667,
+    governorate: "Alexandria",
+    latitude: 31.20176,
+    longitude: 29.91582,
     timezone: "Africa/Cairo"
   },
   ramadan: {

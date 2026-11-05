@@ -112,7 +112,7 @@ function updateMainMoon() {
     dayNum = today.day;
   } else {
     const now = new Date();
-    const ramadanStart = new Date(2027, 1, 9);
+    const ramadanStart = new Date(2027, 1, 8);
     const diff = Math.floor((now - ramadanStart) / 86400000);
     if (diff >= 0 && diff < 30) dayNum = diff + 1;
     else if (diff < 0) dayNum = 1;
@@ -321,7 +321,7 @@ function moonCardSVG(day) {
 
 /* RAMADAN-COUNTER */
 (function ramadanCounter(){
-  var RAMADAN_START = new Date(2027, 1, 9, 0, 0, 0);  // 9 فبراير 2027
+  var RAMADAN_START = new Date(2027, 1, 8, 0, 0, 0);  // 9 فبراير 2027
 
   function tick(){
     var now = new Date();
@@ -451,8 +451,8 @@ function moonCardSVG(day) {
     stars.forEach(function(star) {
       if (star.dataset.fmv2) return;
       star.dataset.fmv2 = "1";
-      var dur = 1.5 + Math.random() * 1.5;  // 1.5-3s (كان 2-4)
-      var delay = Math.random() * 2;
+      var dur = 7 + Math.random() * 5;  // 1.5-3s (كان 2-4)
+      var delay = Math.random() * 8;
       star.style.animation = "starTwinkle " + dur + "s ease-in-out " + delay + "s infinite";
     });
 

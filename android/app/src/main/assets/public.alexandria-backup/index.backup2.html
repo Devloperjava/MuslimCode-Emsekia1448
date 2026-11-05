@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050d1a">
+  <meta name="description" content="إمساكية رمضان 1448هـ — القاهرة">
+  <title>إمساكية رمضان 1448</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ============ SKY SCENE ============ -->
+  <section class="sky" id="sky">
+    <div class="stars-layer" id="starsLayer"></div>
+    <div class="shooting-stars" id="shootingStars"></div>
+    <div class="glow-horizon"></div>
+
+    <!-- Clouds passing over the moon -->
+    <div class="clouds">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+
+    <!-- Crescent moon (animated) -->
+    <div class="moon-wrap" id="moonWrap">
+      <div class="moon-halo"></div>
+      <div class="moon-body" id="moonBody">
+        <!-- SVG crescent drawn inline -->
+        <svg viewBox="0 0 100 100" width="110" height="110" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="crescentGrad" cx="35%" cy="35%" r="75%">
+              <stop offset="0%"  stop-color="#fffbe6"/>
+              <stop offset="55%" stop-color="#f5e2a0"/>
+              <stop offset="100%" stop-color="#c9a227"/>
+            </radialGradient>
+            <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="rgba(255,235,150,0.5)"/>
+              <stop offset="70%"  stop-color="rgba(255,235,150,0.1)"/>
+              <stop offset="100%" stop-color="rgba(255,235,150,0)"/>
+            </radialGradient>
+          </defs>
+          <!-- Outer halo -->
+          <circle cx="50" cy="50" r="48" fill="url(#haloGrad)"/>
+          <!-- Crescent: circle + mask circle -->
+          <g>
+            <circle cx="50" cy="50" r="30" fill="url(#crescentGrad)"/>
+            <circle cx="62" cy="46" r="26" fill="#050d1a"/>
+          </g>
+          <!-- Small sparkle -->
+          <circle cx="30" cy="36" r="1.5" fill="#fff8d6" opacity="0.9"/>
+          <circle cx="38" cy="68" r="1.2" fill="#fff8d6" opacity="0.7"/>
+        </svg>
+      </div>
+      <div class="moon-glow-pulse"></div>
+    </div>
+
+    <!-- Ramadan lantern garland (زينة رمضانية) -->
+    <div class="garland">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,10 Q300,60 600,20 T1200,10" stroke="rgba(201,162,39,.7)" stroke-width="1.5" fill="none"/>
+      </svg>
+      <div class="lantern-string">
+        <span class="mini-lantern" style="animation-delay:0s"></span>
+        <span class="mini-lantern" style="animation-delay:.4s"></span>
+        <span class="mini-lantern" style="animation-delay:.8s"></span>
+        <span class="mini-lantern" style="animation-delay:1.2s"></span>
+        <span class="mini-lantern" style="animation-delay:1.6s"></span>
+        <span class="mini-lantern" style="animation-delay:2s"></span>
+        <span class="mini-lantern" style="animation-delay:2.4s"></span>
+      </div>
+    </div>
+
+    <!-- Mosque with ONE minaret -->
+    <div class="mosque-silhouette">
+      <svg viewBox="0 0 1200 280" preserveAspectRatio="xMidYEnd meet" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="mosqueGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#0a1a2e"/>
+            <stop offset="100%" stop-color="#020610"/>
+          </linearGradient>
+          <linearGradient id="domeGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#0d2440"/>
+            <stop offset="100%" stop-color="#030912"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Ground -->
+        <rect x="0" y="250" width="1200" height="30" fill="url(#mosqueGrad)"/>
+
+        <!-- Main mosque (centered, with ONE minaret on the right) -->
+        <g fill="url(#mosqueGrad)">
+          <!-- Base of mosque -->
+          <rect x="440" y="150" width="320" height="100" rx="4"/>
+
+          <!-- Main dome -->
+          <path d="M520,150 Q600,55 680,150 Z" fill="url(#domeGrad)"/>
+          <!-- Dome finial (crescent on top) -->
+          <rect x="598" y="20" width="4" height="30"/>
+          <circle cx="600" cy="16" r="4"/>
+
+          <!-- SINGLE MINARET on the right -->
+          <rect x="790" y="80" width="28" height="170"/>
+          <!-- Minaret balcony -->
+          <rect x="784" y="110" width="40" height="8" rx="3"/>
+          <rect x="786" y="170" width="36" height="6" rx="2"/>
+          <!-- Minaret top dome -->
+          <path d="M790,80 L804,45 L818,80 Z"/>
+          <!-- Finial crescent on minaret -->
+          <rect x="802" y="28" width="3" height="17"/>
+          <circle cx="803" cy="24" r="3.5"/>
+
+          <!-- Small side dome on left -->
+          <path d="M440,150 Q465,120 490,150 Z"/>
+        </g>
+
+        <!-- Windows (lit warmly) -->
+        <g fill="#ffd97a" opacity="0.9">
+          <rect x="470" y="185" width="12" height="36" rx="6"/>
+          <rect x="510" y="185" width="12" height="36" rx="6"/>
+          <rect x="550" y="185" width="12" height="36" rx="6"/>
+          <rect x="638" y="185" width="12" height="36" rx="6"/>
+          <rect x="678" y="185" width="12" height="36" rx="6"/>
+          <rect x="718" y="185" width="12" height="36" rx="6"/>
+          <!-- Main door (glowing) -->
+          <rect x="585" y="200" width="30" height="50" rx="15"/>
+        </g>
+
+        <!-- Crescent on minaret top (shining) -->
+        <g fill="#ffd97a">
+          <circle cx="803" cy="24" r="5"/>
+          <circle cx="806" cy="23" r="4" fill="url(#mosqueGrad)"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Swaying lantern below minaret -->
+    <div class="hanging-lantern" id="hangingLantern">
+      <div class="chain"></div>
+      <div class="lantern-body">
+        <div class="lantern-glow"></div>
+        <div class="lantern-top"></div>
+        <div class="lantern-glass"></div>
+        <div class="lantern-bottom"></div>
+      </div>
+    </div>
+
+    <!-- Title overlay -->
+    <div class="title-overlay">
+      <h1>إمساكية رمضان 1448</h1>
+      <p>القاهرة — الطريقة المصرية</p>
+    </div>
+  </section>
+
+  <!-- ============ APP ============ -->
+  <main class="app">
+
+    <section id="countdown" class="countdown" aria-live="polite"></section>
+
+    <section id="today" class="today-card"></section>
+
+    <section class="calendar-section">
+      <h2>إمساكية الشهر كاملة</h2>
+      <div id="calendar" class="calendar"></div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-line"></div>
+      <div class="brand">
+        <span class="brand-name">MuslimCode</span>
+      </div>
+      <div class="footer-glow"></div>
+    </footer>
+
+  </main>
+
+  <script src="./moon.js"></script>
+  <script src="./night-sky.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

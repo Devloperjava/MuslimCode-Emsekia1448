@@ -17,8 +17,8 @@ const NightSky = (function () {
       star.classList.add(cls);
       star.style.left = (Math.random() * 100) + "%";
       star.style.top  = (Math.random() * 100) + "%";
-      star.style.animationDelay = (Math.random() * 4) + "s";
-      star.style.animationDuration = (2 + Math.random() * 2) + "s";
+      star.style.animationDelay = (Math.random() * 8) + "s";
+      star.style.animationDuration = (7 + Math.random() * 5) + "s";
       if (Math.random() < 0.15) {
         star.style.background = "radial-gradient(circle, #a8c8ff, transparent 70%)";
       } else if (Math.random() < 0.15) {
@@ -35,20 +35,10 @@ const NightSky = (function () {
   /* ===== مطر واقعي ===== */
   
 
-  function spawnDrop(layer, type, minDur, maxDur, delayMax) {
-    const d = document.createElement("div");
-    d.className = "rain-drop " + type;
-    d.style.left = (Math.random() * 100) + "%";
-    d.style.top = (Math.random() * -100) + "px";
-    d.style.animationDuration = (minDur + Math.random() * (maxDur - minDur)) + "s";
-    
-    layer.appendChild(d);
-  }
-
   /* ===== init ===== */
   function init() {
     const starsLayer = document.getElementById("starsLayer");
-    if (starsLayer) createStars(starsLayer, 150);
+    if (starsLayer) createStars(starsLayer, 75);
     createRain();
   }
 

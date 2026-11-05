@@ -1,3 +1,4 @@
+
 /* ============================================================
    إمساكية رمضان 1448 — التصميم الفني الكامل (النسخة النهائية)
    ============================================================ */
@@ -88,8 +89,8 @@ body {
 .star-lg { width: 5px; height: 5px; box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, .6); }
 
 @keyframes starTwinkle {
-    0%, 100% { opacity: .1; transform: scale(.7); }
-    50% { opacity: 1; transform: scale(1.4); }
+    0%, 100% { opacity: .25; transform: scale(.88); }
+    50% { opacity: .82; transform: scale(1.12); }
 }
 
 /* ============================================================
@@ -130,13 +131,14 @@ body {
    ============================================================ */
 .mosque-silhouette {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 50%;
+    right: auto;
     bottom: 0;
-    width: 100vw;
-    height: 62vh;
-    min-height: 440px;
-    max-height: 560px;
+    transform: translateX(-50%);
+    width: calc(100vw + 7px);
+    height: calc(62vh + 7px);
+    min-height: 447px;
+    max-height: 567px;
     z-index: 5;
     pointer-events: none;
     overflow: visible;
@@ -201,7 +203,7 @@ body {
 }
 
 /* ============================================================
-   RAMADAN COUNTER — العداد التنازلي (التصميم المطلوب)
+   RAMADAN COUNTER — العداد التنازلي
    ============================================================ */
 .ramadan-counter {
     margin: 20px auto;
@@ -276,27 +278,28 @@ body {
 
 /* المربعات المحيطة بالأرقام */
 .rc-part {
-    width: 90px !important;
-    height: 90px !important;
-    min-width: 90px !important;
-    max-width: 90px !important;
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 10px 5px !important;
+    padding: 2px 0 !important;
     box-sizing: border-box !important;
-    border-radius: 16px !important;
-    background: linear-gradient(145deg, rgba(74, 154, 146, 0.25), rgba(42, 95, 90, 0.15)) !important;
-    border: 1.5px solid rgba(74, 154, 146, 0.55) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(126, 201, 192, 0.2) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
-/* الأرقام الضخمة */
+/* الأرقام */
 .rc-num {
     color: #7ec9c0 !important;
     -webkit-text-fill-color: #7ec9c0 !important;
-    font-size: 55px !important;
+    font-size: 36px !important;
     font-weight: 900 !important;
     line-height: 1 !important;
     margin-bottom: 5px !important;
@@ -307,7 +310,7 @@ body {
 /* الكلمات أسفل الأرقام */
 .rc-unit {
     color: #4a9a92 !important;
-    font-size: 22px !important;
+    font-size: 16px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
     margin-top: 8px !important;
@@ -317,7 +320,7 @@ body {
 /* النقطتان (:) */
 .rc-sep {
     color: #7ec9c0 !important;
-    font-size: 45px !important;
+    font-size: 28px !important;
     font-weight: 700 !important;
     margin-top: -5px !important;
     opacity: 0.9 !important;
@@ -709,7 +712,7 @@ body {
 
 @media (max-width: 600px) {
     .sky { height: 48vh; min-height: 360px; }
-    .mosque-silhouette { height: 60vh; min-height: 420px; max-height: 540px; }
+    .mosque-silhouette { height: calc(60vh + 7px); min-height: 427px; max-height: 547px; }
     .date-label { font-size: 26px !important; }
     .date-gregorian { font-size: 19px !important; }
     .prayer span { font-size: 23px !important; }
@@ -718,31 +721,31 @@ body {
     .moon-day-num { font-size: 26px !important; }
     .ayah-clean-text { font-size: 22px !important; }
     .ayah-clean-open, .ayah-clean-close { font-size: 28px !important; }
-    
+
     /* استجابة العداد للشاشات المتوسطة */
-    .rc-part { width: 70px !important; height: 70px !important; min-width: 70px !important; max-width: 70px !important; }
-    .rc-num { font-size: 40px !important; }
-    .rc-unit { font-size: 18px !important; }
-    .rc-sep { font-size: 35px !important; }
-    
+    .rc-part { width: 56px !important; height: 56px !important; min-width: 56px !important; max-width: 56px !important; }
+    .rc-num { font-size: 30px !important; }
+    .rc-unit { font-size: 15px !important; }
+    .rc-sep { font-size: 26px !important; }
+
     .site-footer .brand-name { font-size: 26px; }
     .moon-wrap { top: 50px; right: 10%; width: 90px; height: 90px; }
 }
 
 @media (max-width: 380px) {
     .sky { height: 45vh; min-height: 330px; }
-    .mosque-silhouette { height: 58vh; min-height: 380px; max-height: 500px; }
+    .mosque-silhouette { height: calc(58vh + 7px); min-height: 387px; max-height: 507px; }
     .date-label { font-size: 24px !important; }
     .date-gregorian { font-size: 17px !important; }
     .prayer span { font-size: 21px !important; }
     .prayer strong { font-size: 17px !important; }
-    
+
     /* استجابة العداد للشاشات الصغيرة جداً */
-    .rc-part { width: 60px !important; height: 60px !important; min-width: 60px !important; max-width: 60px !important; }
-    .rc-num { font-size: 32px !important; }
-    .rc-unit { font-size: 16px !important; }
-    .rc-sep { font-size: 28px !important; }
-    
+    .rc-part { width: 48px !important; height: 48px !important; min-width: 48px !important; max-width: 48px !important; }
+    .rc-num { font-size: 26px !important; }
+    .rc-unit { font-size: 14px !important; }
+    .rc-sep { font-size: 22px !important; }
+
     .site-footer .brand-name { font-size: 24px; }
     .moon-wrap { top: 45px; width: 80px; height: 80px; }
 }
@@ -754,3 +757,132 @@ body {
         transition-duration: .01ms !important;
     }
 }
+
+/* ============================================================
+   V99_COUNTER_TUNING_2026
+   تعديل أحجام العداد فقط بمقدار 2px
+   ============================================================ */
+.rc-label .rc-typewriter{font-size:30px!important}
+.rc-num{font-size:36px!important;margin-bottom:2px!important}
+.rc-unit{font-size:19px!important;margin-top:2px!important;text-shadow:0 0 8px rgba(74,154,146,.65)!important}
+.rc-sep{position:relative!important;top:0!important;font-size:28px!important;line-height:1!important;margin-top:0!important;align-self:center!important;transform:none!important;text-shadow:0 0 10px rgba(126,201,192,.75)!important}
+
+@media(max-width:600px){
+    .rc-label .rc-typewriter{font-size:25px!important}
+    .rc-num{font-size:38px!important}
+    .rc-unit{font-size:21px!important}
+    .rc-sep{position:relative!important;top:0!important;font-size:34px!important;line-height:1!important;margin-top:0!important;align-self:center!important;transform:none!important}
+}
+
+@media(max-width:380px){
+    .rc-label .rc-typewriter{font-size:23px!important}
+    .rc-num{font-size:34px!important}
+    .rc-unit{font-size:20px!important}
+    .rc-sep{position:relative!important;top:0!important;font-size:27px!important;line-height:1!important;margin-top:0!important;align-self:center!important;transform:none!important}
+}
+
+
+/* MUSLIM 2026 V99 — isolated scene effects */
+.clouds {
+    position: absolute;
+    inset: 0;
+    z-index: 6;
+    overflow: hidden;
+    pointer-events: none;
+}
+.cloud {
+    position: absolute;
+    width: 210px;
+    height: 54px;
+    border-radius: 50%;
+    opacity: .18;
+    filter: blur(9px);
+    background: radial-gradient(ellipse at 50% 55%, rgba(238,247,250,.82) 0%, rgba(205,224,232,.42) 42%, transparent 76%);
+    animation: cloudDrift 72s linear infinite;
+    will-change: transform;
+}
+.cloud::before, .cloud::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: inherit;
+    filter: blur(5px);
+}
+.cloud::before { width: 58%; height: 125%; left: 16%; top: -35%; }
+.cloud::after { width: 48%; height: 105%; right: 10%; top: -18%; }
+.cloud-1 { top: 25%; left: -250px; width: 250px; animation-duration: 78s; } .cloud-2 { top: 32%; left: -300px; width: 205px; opacity: .14; animation-duration: 102s; animation-delay: -43s; } .cloud-3 { top: 20%; left: -280px; width: 175px; opacity: .12; animation-duration: 116s; animation-delay: -71s; }
+.clouds::before, .clouds::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 42px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(236,246,250,.52), rgba(205,224,232,.18) 48%, transparent 76%);
+    filter: blur(10px);
+    opacity: .22;
+    animation: cloudDrift 96s linear infinite;
+}
+.clouds::before { top: 39%; left: -220px; animation-delay: -31s; }
+.clouds::after { top: 16%; left: -240px; width: 150px; opacity: .14; animation-duration: 112s; animation-delay: -58s; }
+@keyframes cloudDrift {
+    from { transform: translate3d(-12vw,0,0); }
+    to { transform: translate3d(125vw,0,0); }
+}
+/* RAIN — يدعم قطرات NightSky التي ينشئها JavaScript */
+.rain, #rainLayer {
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    overflow: hidden;
+    pointer-events: none;
+}
+.rain-drop {
+    position: absolute;
+    top: -35px;
+    width: 1px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: .42;
+    background: linear-gradient(180deg, transparent 0%, rgba(191,224,239,.28) 24%, rgba(205,231,244,.78) 100%); box-shadow: 0 0 2px rgba(190,225,240,.22);
+    transform: rotate(12deg);
+    animation-name: rainFall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+.rain-drop.type-thin { width: 1px; height: 14px; opacity: .28; }
+.rain-drop.type-mid { width: 1.4px; height: 21px; opacity: .4; }
+.rain-drop.type-thick { width: 2px; height: 27px; opacity: .48; }
+@keyframes rainFall {
+    from { transform: translate3d(-10px,-45px,0) rotate(12deg); }
+    to { transform: translate3d(34px,620px,0) rotate(12deg); }
+}
+@media(max-width:600px){.cloud{opacity:.15}}
+/* END MUSLIM 2026 V99 — isolated scene effects */
+
+@media(max-width:600px){}@media(prefers-reduced-motion:reduce){}
+
+
+
+@keyframes topButtonEnter{0%{transform:translateY(18px) scale(.78);filter:blur(3px)}70%{transform:translateY(-3px) scale(1.04)}100%{transform:translateY(0) scale(1);filter:blur(0)}}
+
+/* V99 AMBER ROYAL BUTTON */
+
+
+
+
+
+
+@keyframes amberBreath{0%,100%{box-shadow:0 0 9px rgba(224,157,55,.18)}50%{box-shadow:0 0 16px rgba(255,190,75,.4)}}
+@media(prefers-reduced-motion:reduce){}
+
+/* V99 Andalusian Royal Pendant */
+.andalusian-pendant{position:absolute;top:145px;right:calc(10% - 8px);width:34px;height:62px;z-index:10;pointer-events:none;transform-origin:top center}
+.ap-chain{position:absolute;top:0;left:16px;width:2px;height:13px;background:linear-gradient(90deg,#76502a,#d5ae69,#76502a)}
+.andalusian-pendant svg{position:absolute;top:10px;left:0;width:34px;height:49px;overflow:visible;transform-origin:50% 0;animation:apSwing 7s ease-in-out infinite;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
+.ap-metal{fill:#9b7138;stroke:#e0bd78;stroke-width:1.2}.ap-glass{fill:rgba(232,157,48,.38);stroke:#d8a95c;stroke-width:.8}.ap-ornament{fill:none;stroke:#f0d49a;stroke-width:.65;opacity:.85}.ap-copper{fill:#b8753d;stroke:#f0c17b;stroke-width:.6}
+.ap-glow{position:absolute;top:25px;left:5px;width:24px;height:28px;border-radius:50%;background:rgba(255,176,65,.3);filter:blur(9px);animation:apBreath 4.5s ease-in-out infinite}
+@keyframes apSwing{0%,100%{transform:rotateZ(-4deg) rotateY(-7deg)}50%{transform:rotateZ(4deg) rotateY(7deg)}}
+@keyframes apBreath{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:.85;transform:scale(1.12)}}
+@media(max-width:380px){.andalusian-pendant{top:130px;right:calc(10% - 6px);transform:scale(.86);transform-origin:top right}}
+@media(prefers-reduced-motion:reduce){.andalusian-pendant svg,.ap-glow{animation:none}}
