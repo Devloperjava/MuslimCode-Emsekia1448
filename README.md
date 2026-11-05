@@ -17,14 +17,7 @@
 - Capacitor (لتحويل التطبيق إلى Android)
 - GitHub Actions (اختياري للـ CI/CD)
 
-## 🚀 كيفية التشغيل (How to Run)
-1. قم بنسخ المستودع (Clone):
-   `git clone https://github.com/Devloperjava/MuslimCode-Emsekia1448.git`
-2. افتح المشروع في Android Studio.
-3. قم بعمل Build للتطبيق.
-
 ## 👨‍💻 المطور (Developer)
 - **MuslimCode** - [GitHub](https://github.com/Devloperjava)
 
 ---
-صُنع بحب لخدمة المسلمين. ❤️
