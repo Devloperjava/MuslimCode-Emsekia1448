@@ -1,14 +1,30 @@
-# 🌙 إمساكية رمضان 1448 (MuslimCode Emsekia)
+# Ramadan Emsakiah 1448 | إمساكية رمضان 1448
 
-![Platform](https://img.shields.io/badge/Platform-Android-green.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Release](https://img.shields.io/badge/Release-v1.0.0-orange.svg)
-![Language](https://img.shields.io/badge/Language-Kotlin%20%7C%20Java-purple.svg)
+تطبيق إسلامي أنيق لعرض إمساكية شهر رمضان المبارك 1448هـ، مع تصميم ليلي ساحر وفانوس ذهبي متأرجح.
 
-> تطبيق أندرويد أصلي (Native) يعمل بدون إنترنت، مخصص لتقديم مواقيت الإمساكية والإفطار لشهر رمضان المبارك 1448هـ.
+## ✨ الميزات (Features)
+- 🕌 **خلفية ليلية ساحرة**: مسجد أبيض، هلال متوهج، نجوم متلألئة، وسحب متحركة.
+- 🏮 **فانوس ذهبي ملكي**: يتأرجح بانسيابية ويتوهج بلون ذهبي.
+- ⏳ **عداد تنازلي دقيق**: يعرض الأيام، الساعات، الدقائق، والثواني المتبقية لشهر رمضان.
+- 📅 **تقويم كامل**: يعرض مواقيت الصلاة (الفجر، الظهر، العصر، المغرب، العشاء) لكل يوم.
+- 🌙 **واجهة مستخدم حديثة**: تصميم متجاوب (Responsive) يعمل على جميع الهواتف.
 
-## ✨ المميزات
-- 📅 بطاقة يومية تعرض مواقيت الإمساك والإفطار.
-- 🌙 هلال متحرك (Animation) يتغير يومياً.
-- ⏳ عدّاد تنازلي حتى موعد الإفطار.
-- 📴 يعمل بالكامل بدون الحاجة لاتصال بالإنترنت.
+## 📱 لقطات الشاشة (Screenshots)
+*(قم بإضافة صورة للتطبيق هنا)*
+
+## ⚙️ التقنيات المستخدمة (Tech Stack)
+- HTML5, CSS3, JavaScript (Vanilla)
+- Capacitor (لتحويل التطبيق إلى Android)
+- GitHub Actions (اختياري للـ CI/CD)
+
+## 🚀 كيفية التشغيل (How to Run)
+1. قم بنسخ المستودع (Clone):
+   `git clone https://github.com/Devloperjava/MuslimCode-Emsekia1448.git`
+2. افتح المشروع في Android Studio.
+3. قم بعمل Build للتطبيق.
+
+## 👨‍💻 المطور (Developer)
+- **MuslimCode** - [GitHub](https://github.com/Devloperjava)
+
+---
+صُنع بحب لخدمة المسلمين. ❤️
