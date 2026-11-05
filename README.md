@@ -10,7 +10,14 @@
 - 🌙 **واجهة مستخدم حديثة**: تصميم متجاوب (Responsive) يعمل على جميع الهواتف.
 
 ## 📱 لقطات الشاشة (Screenshots)
-*(قم بإضافة صورة للتطبيق هنا)*
+
+<p align="center">
+  <img src="./screenshots/Home.png" width="250" alt="الشاشة الرئيسية">
+  <img src="./screenshots/calendar 1.png" width="250" alt="التقويم 1">
+  <img src="./screenshots/calendar 2.png" width="250" alt="التقويم 2">
+  <img src="./screenshots/calendar Last.png" width="250" alt="آخر يوم">
+  <img src="./screenshots/counter.png" width="250" alt="العداد التنازلي">
+</p>
 
 ## ⚙️ التقنيات المستخدمة (Tech Stack)
 - HTML5, CSS3, JavaScript (Vanilla)
@@ -19,5 +26,3 @@
 
 ## 👨‍💻 المطور (Developer)
 - **MuslimCode** - [GitHub](https://github.com/Devloperjava)
-
----
