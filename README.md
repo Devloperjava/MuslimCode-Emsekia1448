@@ -2,6 +2,14 @@
 
 تطبيق إسلامي أنيق لعرض إمساكية شهر رمضان المبارك 1448هـ، مع تصميم ليلي ساحر وفانوس ذهبي متأرجح.
 
+## 📲 تحميل التطبيق (Download App)
+
+<p align="center">
+  <a href="https://github.com/Devloperjava/MuslimCode-Emsekia1448/releases/download/v1.3.3/app-debug.apk">
+    <img src="https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android" alt="Download APK">
+  </a>
+</p>
+
 ## ✨ الميزات (Features)
 - 🕌 **خلفية ليلية ساحرة**: مسجد أبيض، هلال متوهج، نجوم متلألئة، وسحب متحركة.
 - 🏮 **فانوس ذهبي ملكي**: يتأرجح بانسيابية ويتوهج بلون ذهبي.
