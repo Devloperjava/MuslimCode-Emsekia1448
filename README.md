@@ -11,18 +11,13 @@
 
 ## 📱 لقطات الشاشة (Screenshots)
 
-<table align="center">
-  <tr>
-    <td align="center"><img src="./screenshots/Home.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="الشاشة الرئيسية"></td>
-    <td align="center"><img src="./screenshots/calendar 1.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="التقويم 1"></td>
-    <td align="center"><img src="./screenshots/calendar 2.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="التقويم 2"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./screenshots/calendar Last.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="آخر يوم"></td>
-    <td align="center"><img src="./screenshots/counter.png" width="200" height="400" style="object-fit: cover; border-radius: 10px;" alt="العداد التنازلي"></td>
-    <td align="center"></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./screenshots/Home.png" width="220" alt="الشاشة الرئيسية" style="margin: 5px; border-radius: 8px;">
+  <img src="./screenshots/calendar 1.png" width="220" alt="التقويم 1" style="margin: 5px; border-radius: 8px;">
+  <img src="./screenshots/calendar 2.png" width="220" alt="التقويم 2" style="margin: 5px; border-radius: 8px;">
+  <img src="./screenshots/calendar Last.png" width="220" alt="آخر يوم" style="margin: 5px; border-radius: 8px;">
+  <img src="./screenshots/counter.png" width="220" alt="العداد التنازلي" style="margin: 5px; border-radius: 8px;">
+</p>
 
 ## ⚙️ التقنيات المستخدمة (Tech Stack)
 - HTML5, CSS3, JavaScript (Vanilla)
